@@ -71,6 +71,7 @@ body {
 }
 
 .info-section {  /* Seccion lista */
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,11 +80,12 @@ body {
 }
 
 .info-section .container {
-    height: 350px;
-    width: 225px;
+    flex: 1; /* Para asegurar que el container crezca acorde a su contenido. Ignora al height
+                que estaba puesto abajo, asi que se lo saca. */
     display: flex;
     justify-content: space-around;
     gap: 50px;
+    flex-wrap: wrap;
 }
 
 .info-section .subtitle {
@@ -128,13 +130,14 @@ a {
     flex-direction: column;
     justify-content: center;
     padding: 0 450px;
+    flex-wrap: wrap;
 }
 
 .quote-section .quote {
     font-size: 36px;
     font-weight: lighter;
     font-style: italic;
-    
+    flex-wrap: wrap;
 }
 
 .quote-section .quote-autor {
