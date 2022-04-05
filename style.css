@@ -68,7 +68,7 @@ body {
 .top-section .image-placeholder {
     height: 250px;
     width: 550px;
-    background-color: gray;
+    background-color: #495057;
     display: flex;
     justify-content: center;
     align-items: center;
